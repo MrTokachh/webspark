@@ -1,0 +1,1697 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+  color: #c5c5c5;
+}
+
+.-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+  color: #fff;
+  background: #a2ddf6;
+}
+
+.-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+  background: #8ad5f4;
+}
+
+.-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.1);
+  color: #cccccc;
+}
+
+.-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.2);
+}
+
+.datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+  background: none;
+  border: none;
+}
+
+/* -------------------------------------------------
+    Datepicker cells
+   ------------------------------------------------- */
+.datepicker--cells {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.datepicker--cell {
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  z-index: 1;
+}
+
+.datepicker--cell.-focus- {
+  background: #f0f0f0;
+}
+
+.datepicker--cell.-current- {
+  color: #4EB5E6;
+}
+
+.datepicker--cell.-current-.-focus- {
+  color: #4a4a4a;
+}
+
+.datepicker--cell.-current-.-in-range- {
+  color: #4EB5E6;
+}
+
+.datepicker--cell.-in-range- {
+  background: rgba(92, 196, 239, 0.1);
+  color: #4a4a4a;
+  border-radius: 0;
+}
+
+.datepicker--cell.-in-range-.-focus- {
+  background-color: rgba(92, 196, 239, 0.2);
+}
+
+.datepicker--cell.-disabled- {
+  cursor: default;
+  color: #aeaeae;
+}
+
+.datepicker--cell.-disabled-.-focus- {
+  color: #aeaeae;
+}
+
+.datepicker--cell.-disabled-.-in-range- {
+  color: #a1a1a1;
+}
+
+.datepicker--cell.-disabled-.-current-.-focus- {
+  color: #aeaeae;
+}
+
+.datepicker--cell.-range-from- {
+  border: 1px solid rgba(92, 196, 239, 0.5);
+  background-color: rgba(92, 196, 239, 0.1);
+  border-radius: 4px 0 0 4px;
+}
+
+.datepicker--cell.-range-to- {
+  border: 1px solid rgba(92, 196, 239, 0.5);
+  background-color: rgba(92, 196, 239, 0.1);
+  border-radius: 0 4px 4px 0;
+}
+
+.datepicker--cell.-range-from-.-range-to- {
+  border-radius: 4px;
+}
+
+.datepicker--cell.-selected- {
+  color: #fff;
+  border: none;
+  background: #5cc4ef;
+}
+
+.datepicker--cell.-selected-.-current- {
+  color: #fff;
+  background: #5cc4ef;
+}
+
+.datepicker--cell.-selected-.-focus- {
+  background: #45bced;
+}
+
+.datepicker--cell:empty {
+  cursor: default;
+}
+
+.datepicker--days-names {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 8px 0 3px;
+}
+
+.datepicker--day-name {
+  color: #FF9A19;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.datepicker--cell-day {
+  width: 14.28571%;
+}
+
+.datepicker--cells-months {
+  height: 170px;
+}
+
+.datepicker--cell-month {
+  width: 33.33%;
+  height: 25%;
+}
+
+.datepicker--years {
+  height: 170px;
+}
+
+.datepicker--cells-years {
+  height: 170px;
+}
+
+.datepicker--cell-year {
+  width: 25%;
+  height: 33.33%;
+}
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+  color: #c5c5c5;
+}
+
+.-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+  color: #fff;
+  background: #a2ddf6;
+}
+
+.-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+  background: #8ad5f4;
+}
+
+.-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.1);
+  color: #cccccc;
+}
+
+.-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.2);
+}
+
+.datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+  background: none;
+  border: none;
+}
+
+/* -------------------------------------------------
+    Datepicker
+   ------------------------------------------------- */
+.datepickers-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media print {
+  .datepickers-container {
+    display: none;
+  }
+}
+
+.datepicker {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-sizing: content-box;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  color: #4a4a4a;
+  width: 250px;
+  position: absolute;
+  left: -100000px;
+  opacity: 0;
+  transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+  z-index: 100;
+}
+
+.datepicker.-from-top- {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.datepicker.-from-right- {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.datepicker.-from-bottom- {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+}
+
+.datepicker.-from-left- {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+
+.datepicker.active {
+  opacity: 1;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  transition: opacity 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s;
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease;
+}
+
+.datepicker-inline .datepicker {
+  border-color: #d7d7d7;
+  box-shadow: none;
+  position: static;
+  left: auto;
+  right: auto;
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.datepicker-inline .datepicker--pointer {
+  display: none;
+}
+
+.datepicker--content {
+  box-sizing: content-box;
+  padding: 4px;
+}
+
+.-only-timepicker- .datepicker--content {
+  display: none;
+}
+
+.datepicker--pointer {
+  position: absolute;
+  background: #fff;
+  border-top: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+}
+
+.-top-left- .datepicker--pointer, .-top-center- .datepicker--pointer, .-top-right- .datepicker--pointer {
+  top: calc(100% - 4px);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.-right-top- .datepicker--pointer, .-right-center- .datepicker--pointer, .-right-bottom- .datepicker--pointer {
+  right: calc(100% - 4px);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.-bottom-left- .datepicker--pointer, .-bottom-center- .datepicker--pointer, .-bottom-right- .datepicker--pointer {
+  bottom: calc(100% - 4px);
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+
+.-left-top- .datepicker--pointer, .-left-center- .datepicker--pointer, .-left-bottom- .datepicker--pointer {
+  left: calc(100% - 4px);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.-top-left- .datepicker--pointer, .-bottom-left- .datepicker--pointer {
+  left: 10px;
+}
+
+.-top-right- .datepicker--pointer, .-bottom-right- .datepicker--pointer {
+  right: 10px;
+}
+
+.-top-center- .datepicker--pointer, .-bottom-center- .datepicker--pointer {
+  left: calc(50% - 10px / 2);
+}
+
+.-left-top- .datepicker--pointer, .-right-top- .datepicker--pointer {
+  top: 10px;
+}
+
+.-left-bottom- .datepicker--pointer, .-right-bottom- .datepicker--pointer {
+  bottom: 10px;
+}
+
+.-left-center- .datepicker--pointer, .-right-center- .datepicker--pointer {
+  top: calc(50% - 10px / 2);
+}
+
+.datepicker--body {
+  display: none;
+}
+
+.datepicker--body.active {
+  display: block;
+}
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+  color: #c5c5c5;
+}
+
+.-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+  color: #fff;
+  background: #a2ddf6;
+}
+
+.-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+  background: #8ad5f4;
+}
+
+.-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.1);
+  color: #cccccc;
+}
+
+.-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.2);
+}
+
+.datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+  background: none;
+  border: none;
+}
+
+/* -------------------------------------------------
+    Navigation
+   ------------------------------------------------- */
+.datepicker--nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #efefef;
+  min-height: 32px;
+  padding: 4px;
+}
+
+.-only-timepicker- .datepicker--nav {
+  display: none;
+}
+
+.datepicker--nav-title,
+.datepicker--nav-action {
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.datepicker--nav-action {
+  width: 32px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.datepicker--nav-action:hover {
+  background: #f0f0f0;
+}
+
+.datepicker--nav-action.-disabled- {
+  visibility: hidden;
+}
+
+.datepicker--nav-action svg {
+  width: 32px;
+  height: 32px;
+}
+
+.datepicker--nav-action path {
+  fill: none;
+  stroke: #9c9c9c;
+  stroke-width: 2px;
+}
+
+.datepicker--nav-title {
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
+.datepicker--nav-title i {
+  font-style: normal;
+  color: #9c9c9c;
+  margin-left: 5px;
+}
+
+.datepicker--nav-title:hover {
+  background: #f0f0f0;
+}
+
+.datepicker--nav-title.-disabled- {
+  cursor: default;
+  background: none;
+}
+
+.datepicker--buttons {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px;
+  border-top: 1px solid #efefef;
+}
+
+.datepicker--button {
+  color: #4EB5E6;
+  cursor: pointer;
+  border-radius: 4px;
+  -ms-flex: 1;
+  flex: 1;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+}
+
+.datepicker--button:hover {
+  color: #4a4a4a;
+  background: #f0f0f0;
+}
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+  color: #c5c5c5;
+}
+
+.-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+  color: #fff;
+  background: #a2ddf6;
+}
+
+.-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+  background: #8ad5f4;
+}
+
+.-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.1);
+  color: #cccccc;
+}
+
+.-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.2);
+}
+
+.datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+  background: none;
+  border: none;
+}
+
+/* -------------------------------------------------
+    Timepicker
+   ------------------------------------------------- */
+.datepicker--time {
+  border-top: 1px solid #efefef;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px;
+  position: relative;
+}
+
+.datepicker--time.-am-pm- .datepicker--time-sliders {
+  -ms-flex: 0 1 138px;
+  flex: 0 1 138px;
+  max-width: 138px;
+}
+
+.-only-timepicker- .datepicker--time {
+  border-top: none;
+}
+
+.datepicker--time-sliders {
+  -ms-flex: 0 1 153px;
+  flex: 0 1 153px;
+  margin-right: 10px;
+  max-width: 153px;
+}
+
+.datepicker--time-label {
+  display: none;
+  font-size: 12px;
+}
+
+.datepicker--time-current {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0 0 10px;
+}
+
+.datepicker--time-current-colon {
+  margin: 0 2px 3px;
+  line-height: 1;
+}
+
+.datepicker--time-current-hours,
+.datepicker--time-current-minutes {
+  line-height: 1;
+  font-size: 19px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.datepicker--time-current-hours:after,
+.datepicker--time-current-minutes:after {
+  content: '';
+  background: #f0f0f0;
+  border-radius: 4px;
+  position: absolute;
+  left: -2px;
+  top: -3px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  opacity: 0;
+}
+
+.datepicker--time-current-hours.-focus-:after,
+.datepicker--time-current-minutes.-focus-:after {
+  opacity: 1;
+}
+
+.datepicker--time-current-ampm {
+  text-transform: uppercase;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  color: #9c9c9c;
+  margin-left: 6px;
+  font-size: 11px;
+  margin-bottom: 1px;
+}
+
+.datepicker--time-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 11px;
+  height: 17px;
+  background: linear-gradient(to right, #dedede, #dedede) left 50%/100% 1px no-repeat;
+}
+
+.datepicker--time-row:first-child {
+  margin-bottom: 4px;
+}
+
+.datepicker--time-row input[type='range'] {
+  background: none;
+  cursor: pointer;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.datepicker--time-row input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.datepicker--time-row input[type='range']::-ms-tooltip {
+  display: none;
+}
+
+.datepicker--time-row input[type='range']:hover::-webkit-slider-thumb {
+  border-color: #b8b8b8;
+}
+
+.datepicker--time-row input[type='range']:hover::-moz-range-thumb {
+  border-color: #b8b8b8;
+}
+
+.datepicker--time-row input[type='range']:hover::-ms-thumb {
+  border-color: #b8b8b8;
+}
+
+.datepicker--time-row input[type='range']:focus {
+  outline: none;
+}
+
+.datepicker--time-row input[type='range']:focus::-webkit-slider-thumb {
+  background: #5cc4ef;
+  border-color: #5cc4ef;
+}
+
+.datepicker--time-row input[type='range']:focus::-moz-range-thumb {
+  background: #5cc4ef;
+  border-color: #5cc4ef;
+}
+
+.datepicker--time-row input[type='range']:focus::-ms-thumb {
+  background: #5cc4ef;
+  border-color: #5cc4ef;
+}
+
+.datepicker--time-row input[type='range']::-webkit-slider-thumb {
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+  background: #fff;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.datepicker--time-row input[type='range']::-moz-range-thumb {
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+  background: #fff;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.datepicker--time-row input[type='range']::-ms-thumb {
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+  background: #fff;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.datepicker--time-row input[type='range']::-webkit-slider-thumb {
+  margin-top: -6px;
+}
+
+.datepicker--time-row input[type='range']::-webkit-slider-runnable-track {
+  border: none;
+  height: 1px;
+  cursor: pointer;
+  color: transparent;
+  background: transparent;
+}
+
+.datepicker--time-row input[type='range']::-moz-range-track {
+  border: none;
+  height: 1px;
+  cursor: pointer;
+  color: transparent;
+  background: transparent;
+}
+
+.datepicker--time-row input[type='range']::-ms-track {
+  border: none;
+  height: 1px;
+  cursor: pointer;
+  color: transparent;
+  background: transparent;
+}
+
+.datepicker--time-row input[type='range']::-ms-fill-lower {
+  background: transparent;
+}
+
+.datepicker--time-row input[type='range']::-ms-fill-upper {
+  background: transparent;
+}
+
+.datepicker--time-row span {
+  padding: 0 12px;
+}
+
+.datepicker--time-icon {
+  color: #9c9c9c;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 16px;
+  position: relative;
+  margin: 0 5px -1px 0;
+  width: 1em;
+  height: 1em;
+}
+
+.datepicker--time-icon:after, .datepicker--time-icon:before {
+  content: '';
+  background: currentColor;
+  position: absolute;
+}
+
+.datepicker--time-icon:after {
+  height: .4em;
+  width: 1px;
+  left: calc(50% - 1px);
+  top: calc(50% + 1px);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.datepicker--time-icon:before {
+  width: .4em;
+  height: 1px;
+  top: calc(50% + 1px);
+  left: calc(50% - 1px);
+}
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+  color: #c5c5c5;
+}
+
+.-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+  color: #dedede;
+}
+
+.-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+  color: #fff;
+  background: #a2ddf6;
+}
+
+.-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+  background: #8ad5f4;
+}
+
+.-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.1);
+  color: #cccccc;
+}
+
+.-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+  background-color: rgba(92, 196, 239, 0.2);
+}
+
+.datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+  background: none;
+  border: none;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+#wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #262626;
+  font-family: "ProximaNova", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3d4044;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 23px;
+  font-style: normal;
+  color: #262626;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: 'MyriadPro', 'Arial', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  position: relative;
+}
+
+.content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+  max-width: 966px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  display: block;
+  width: 116px;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+}
+
+.profile-description {
+  width: calc(100% - 116px);
+  padding-left: 7px;
+}
+
+.profile-description h1 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.profile-description .title-holder {
+  margin-bottom: 10px;
+}
+
+.profile-description .date-info {
+  border: 1px solid #4090db;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 13px;
+  font-family: "HelveticaNeue", "Arial", sans-serif;
+  color: #4090db;
+}
+
+.statisticks-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 13px;
+  color: #3d4044;
+  margin: 0 -5px 13px;
+}
+
+.statisticks-list li {
+  padding: 0 5px;
+}
+
+.statisticks-list li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.statisticks-list li a:hover {
+  color: #4090db;
+}
+
+.profile-holder {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.date-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.date-form .date-box {
+  width: calc(100% - 50px);
+  max-width: 174px;
+  margin: 0 5px 5px;
+  position: relative;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.date-form .date-box input {
+  border: 0;
+  height: 20px;
+  position: relative;
+}
+
+.date-form .date-icon {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ebebeb;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-left: 1px solid #cccccc;
+}
+
+.date-form .date-icon:hover {
+  color: #4090db;
+  background-color: #b7cfe6;
+}
+
+.date-form .btn-close {
+  right: 20px;
+}
+
+.datepicker {
+  font-size: 11px;
+  width: 130px;
+  color: #333333;
+}
+
+.datepicker--nav-title {
+  padding: 0;
+  font-family: "HelveticaNeue", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.datepicker--nav {
+  padding: 0;
+  font-size: 11px;
+  border-bottom: 0;
+}
+
+.datepicker--day-name {
+  color: #333333;
+}
+
+.datepicker--cell {
+  height: 25px;
+}
+
+.content {
+  padding: 35px 0 10px;
+  background-color: #fafafa;
+}
+
+.content-area {
+  margin: 0 -5px;
+}
+
+.content-area .column {
+  padding: 0 5px 10px;
+}
+
+.content-area .post {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 292px;
+  color: #ffffff;
+  padding: 0 17px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  font-weight: 600;
+  position: relative;
+}
+
+.content-area .post:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-area .post .camera {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 37px;
+  height: 27px;
+  position: absolute;
+  top: 15px;
+  right: 12px;
+}
+
+.content-area .post .post-box {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+}
+
+.story-stat {
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: "ProximaNova", "Arial", sans-serif;
+}
+
+.story-stat td {
+  padding: 0 5px 5px 0;
+}
+
+.story-stat td:first-child {
+  width: 35%;
+  font-weight: 600;
+}
+
+.story-stat a {
+  color: #ffffff;
+  position: relative;
+  padding-left: 20px;
+}
+
+.story-stat a:hover {
+  color: #4090db;
+}
+
+.story-stat a i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.btn-box {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.button {
+  font-size: 12px;
+  border: 1px solid #000000;
+  border-radius: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  padding: 9px 27px;
+}
+
+.button:hover {
+  color: #4090db;
+  border-color: #4090db;
+}
+
+@media (min-width: 576px) {
+  .profile-description {
+    padding-left: 28px;
+  }
+  .profile-description h1 {
+    padding-right: 19px;
+  }
+  .profile-description .title-holder {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .date-form {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .statisticks-list {
+    font-size: 15px;
+    margin: 0 -15px 23px;
+  }
+  .statisticks-list li {
+    padding: 0 15px;
+  }
+  .statisticks-list li a {
+    display: inline;
+  }
+  .content-area {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content-area .column {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .datepicker {
+    font-size: 14px;
+    width: 250px;
+  }
+  .datepicker--nav {
+    padding: 4px;
+  }
+  .datepicker--nav-title {
+    padding: 0 8px;
+  }
+  .datepicker--cell {
+    height: 32px;
+  }
+  .profile-holder {
+    -ms-flex-align: end;
+        align-items: flex-end;
+    padding: 15px 0 0 69px;
+  }
+  .logo {
+    width: 161px;
+  }
+  .profile-description {
+    width: calc(100% - 161px);
+    padding-left: 70px;
+  }
+  .profile-description h1 {
+    font-size: 35px;
+    padding-right: 19px;
+  }
+  .profile-description .title-holder {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-bottom: 20px;
+  }
+  .profile-description .date-info {
+    font-size: 15px;
+  }
+  .statisticks-list {
+    font-size: 17px;
+  }
+  .statisticks-list .counter {
+    padding-right: 5px;
+  }
+  .content {
+    padding: 78px 0 65px;
+  }
+  .content-area {
+    margin: 0 -15px;
+  }
+  .content-area .column {
+    padding: 0 15px 30px;
+  }
+  .story-stat {
+    font-size: 17px;
+  }
+  .date-form {
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .date-form label {
+    width: 40px;
+  }
+  .date-form .date-box {
+    margin: 0 10px 5px;
+  }
+  .date-form .date-box input {
+    height: 32px;
+  }
+  .date-form .date-icon {
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+  }
+  .date-form .btn-close {
+    right: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content-area .column {
+    width: 33.33%;
+  }
+}

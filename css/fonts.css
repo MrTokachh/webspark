@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600; }
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/Tahoma.eot");
+  src: url("../fonts/Tahoma.eot?#iefix") format("embedded-opentype"), url("../fonts/Tahoma.woff") format("woff"), url("../fonts/Tahoma.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?fah4vv");
+  src: url("../fonts/icomoon.eot?fah4vv#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?fah4vv") format("truetype"), url("../fonts/icomoon.woff?fah4vv") format("woff"), url("../fonts/icomoon.svg?fah4vv#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-calendar1:before {
+  content: "\e902"; }
+
+.icon-chat:before {
+  content: "\e900"; }
+
+.icon-heart:before {
+  content: "\f004"; }
+
+.icon-video-camera:before {
+  content: "\f03d"; }
+
+.icon-play:before {
+  content: "\f04b"; }
+
+.icon-close:before {
+  content: "\e901"; }
