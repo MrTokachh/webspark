@@ -1313,7 +1313,7 @@ ul {
 
 .logo {
   display: block;
-  width: 116px;
+  width: 55px;
 }
 
 .logo img {
@@ -1322,8 +1322,8 @@ ul {
 }
 
 .profile-description {
-  width: calc(100% - 116px);
-  padding-left: 7px;
+  width: calc(100% - 55px);
+  padding-left: 10px;
 }
 
 .profile-description h1 {
@@ -1349,28 +1349,21 @@ ul {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  font-size: 13px;
+  font-size: 12.5px;
   color: #3d4044;
-  margin: 0 -5px 13px;
+  margin: 0 -3px 13px;
 }
 
 .statisticks-list li {
-  padding: 0 5px;
-}
-
-.statisticks-list li a {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  padding: 0 3px;
 }
 
 .statisticks-list li a:hover {
   color: #4090db;
+}
+
+.statisticks-list .counter {
+  padding-right: 3px;
 }
 
 .profile-holder {
@@ -1571,12 +1564,22 @@ ul {
   border-color: #4090db;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 375px) {
+  .date-form {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+}
+
+@media (min-width: 425px) {
   .profile-description {
-    padding-left: 28px;
+    padding-left: 15px;
   }
   .profile-description h1 {
     padding-right: 19px;
+    margin-bottom: 0;
   }
   .profile-description .title-holder {
     display: -ms-flexbox;
@@ -1584,9 +1587,15 @@ ul {
     -ms-flex-align: center;
         align-items: center;
   }
-  .date-form {
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    width: 100px;
+  }
+  .profile-description {
+    padding-left: 28px;
+    width: calc(100% - 100px);
   }
   .statisticks-list {
     font-size: 15px;
@@ -1626,7 +1635,7 @@ ul {
   .profile-holder {
     -ms-flex-align: end;
         align-items: flex-end;
-    padding: 15px 0 0 69px;
+    padding: 15px 0 0 15px;
   }
   .logo {
     width: 161px;
@@ -1691,6 +1700,9 @@ ul {
 }
 
 @media (min-width: 992px) {
+  .profile-holder {
+    padding: 15px 0 0 69px;
+  }
   .content-area .column {
     width: 33.33%;
   }
