@@ -1376,14 +1376,9 @@ ul {
 .date-form {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
 }
 
 .date-form .date-box {
-  width: calc(100% - 50px);
   max-width: 174px;
   margin: 0 5px 5px;
   position: relative;
@@ -1396,6 +1391,8 @@ ul {
   border: 0;
   height: 20px;
   position: relative;
+  width: 100%;
+  padding: 2px 40px 2px 5px;
 }
 
 .date-form .date-icon {
@@ -1564,16 +1561,7 @@ ul {
   border-color: #4090db;
 }
 
-@media (min-width: 375px) {
-  .date-form {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-  }
-}
-
-@media (min-width: 425px) {
+@media (min-width: 480px) {
   .profile-description {
     padding-left: 15px;
   }
@@ -1587,9 +1575,10 @@ ul {
     -ms-flex-align: center;
         align-items: center;
   }
-}
-
-@media (min-width: 576px) {
+  .date-form .data-holder {
+    display: -ms-flexbox;
+    display: flex;
+  }
   .logo {
     width: 100px;
   }
@@ -1684,10 +1673,11 @@ ul {
     width: 40px;
   }
   .date-form .date-box {
-    margin: 0 10px 5px;
+    margin: 0 10px;
   }
   .date-form .date-box input {
     height: 32px;
+    padding-right: 64px;
   }
   .date-form .date-icon {
     font-size: 16px;
